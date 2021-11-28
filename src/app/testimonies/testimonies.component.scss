@@ -1,0 +1,45 @@
+.testimony-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+
+    .img {
+        width: 50px;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .content {
+        text-align: center;
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .author span {
+        display: block;
+        text-align: center;
+    }
+}
+.pagination {
+    div {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: 0.3s;
+        svg{
+            width: 100%;
+        }
+        &.active {
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+            svg path{
+                fill: url('#paint0_linear_1_1097');
+            }
+        }
+    }
+}

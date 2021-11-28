@@ -1,0 +1,61 @@
+.choose-item {
+    background: transparent;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    transition: 0.3s;
+    cursor: default;
+    &.active {
+        box-shadow: 1px 4px 20px rgba(0, 63, 110, 0.527);
+        background: linear-gradient(238.66deg, #0283e9 -18.13%, #fc01ca 120.27%);
+        .img {
+            background: white;
+        }
+        #svg-path{
+            fill: url("#paint0_linear_1_242")
+        }
+        .title{
+            color: white;
+        }
+        .description{
+            color: rgb(226, 226, 226);
+        }
+    }
+}
+
+.img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(238.66deg, #0283e9 -18.13%, #fc01ca 120.27%);
+    transition: 0.3s;
+    svg {
+        width: 50%;
+        height: 50%;
+        color: white;
+        transition: 0.3s;
+    }
+}
+
+.title {
+    margin: 16px 0;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.description {
+    font-size: 17px;
+    font-weight: 300;
+    color: gray;
+    transition: 0.3s;
+}
